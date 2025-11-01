@@ -1,0 +1,5 @@
+{
+  "name": "Halloween Spider Fun UI",
+  "description": "An interactive Halloween-themed web application where users can click on a glowing spider web to spawn 3D spiders. Clicking on the spiders causes them to multiply and crawl around the screen, creating a fun and spooky experience.",
+  "requestFramePermissions": []
+}
