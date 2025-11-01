@@ -144,6 +144,35 @@ export const SpiderWeb: React.FC<SpiderWebProps> = ({ onClick, hasSpider }) => {
         transition: 'opacity 300ms ease',
         animation: isHovered ? 'ping 1s infinite 1s' : 'none'
       }}></div>
+      
+      {/* Click Here text */}
+      <div style={{
+        position: 'absolute',
+        inset: 0,
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        pointerEvents: 'none'
+      }}>
+        <div style={{
+          backgroundColor: isHovered ? 'rgba(139, 92, 246, 0.9)' : 'rgba(139, 92, 246, 0.8)',
+          color: 'white',
+          padding: '8px 12px',
+          borderRadius: '20px',
+          fontSize: '14px',
+          fontWeight: 'bold',
+          fontFamily: 'Arial, sans-serif',
+          textAlign: 'center',
+          boxShadow: '0 4px 12px rgba(139, 92, 246, 0.4)',
+          border: '2px solid rgba(196, 181, 253, 0.6)',
+          backdropFilter: 'blur(4px)',
+          transform: isHovered ? 'scale(1.05)' : 'scale(1)',
+          transition: 'all 300ms ease',
+          animation: 'pulse 2s infinite'
+        }}>
+          Click Here
+        </div>
+      </div>
     </div>
   );
 };
