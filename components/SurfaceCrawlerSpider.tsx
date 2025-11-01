@@ -10,7 +10,7 @@ interface SurfaceCrawlerSpiderProps {
   onClick?: (id: number, position: [number, number, number]) => void;
 }
 
-const spiderModelUrl = '/asset/spider.glb';
+const spiderModelUrl = './asset/spider.glb';
 useGLTF.preload(spiderModelUrl);
 
 export const SurfaceCrawlerSpider: React.FC<SurfaceCrawlerSpiderProps> = ({ id, initialPosition, onClick }) => {

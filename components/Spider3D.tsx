@@ -10,7 +10,7 @@ interface Spider3DProps {
   onClick: (id: number, position: [number, number, number]) => void;
 }
 
-const spiderModelUrl = '/asset/spider.glb';
+const spiderModelUrl = './asset/spider.glb';
 useGLTF.preload(spiderModelUrl);
 
 export const Spider3D: React.FC<Spider3DProps> = ({ id, initialPosition, onClick }) => {

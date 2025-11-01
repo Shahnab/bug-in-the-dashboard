@@ -14,7 +14,7 @@ interface SpiderProps {
 // https://sketchfab.com/3d-models/hi-fi-spider-ff8a4433a5d449a3a0fc54989185a024
 // Ensure the model is in GLB format, rename the file to "spider.glb",
 // and place it in the "/asset/" folder.
-const spiderModelUrl = '/asset/spider.glb';
+const spiderModelUrl = './asset/spider.glb';
 
 // Preload the model
 useGLTF.preload(spiderModelUrl);
