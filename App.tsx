@@ -4,6 +4,7 @@ import { Canvas } from '@react-three/fiber';
 import { OrbitControls, Environment } from '@react-three/drei';
 import { SpiderWeb } from './components/SpiderWeb';
 import { SurfaceCrawlerSpider } from './components/SurfaceCrawlerSpider';
+import { AudioController } from './components/AudioController';
 
 interface SpiderData {
   id: number;
@@ -58,8 +59,11 @@ const App: React.FC = () => {
         fontFamily: 'Arial, sans-serif',
         zIndex: 10
       }}>
-        Bug in Dashboard
+        Bugs in Dashboard
       </div>
+
+      {/* Audio Controller */}
+      <AudioController audioSrc="./audio/1.mp3" />
 
       {/* Spider Web */}
       <SpiderWeb onClick={handleWebClick} hasSpider={spiders.length > 0} />
